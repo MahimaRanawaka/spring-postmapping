@@ -1,0 +1,32 @@
+public class Q2 {
+    public static void main(String args[]){
+        int input[]={70,20,-40,30,-5,10};
+
+        int[] output=new int[input.length];
+        int j=0;
+        System.out.println("input array: ");
+        for(int i=0;i<input.length;i++){
+            System.out.print(input[i]+",");
+            if(input[i]>=0){
+                output[j]=input[i];
+                j++;
+            }
+        }
+
+        for(int i=0;i<input.length;i++){
+            if(input[i]<0){
+                output[j]=input[i];
+                j++;
+            }
+        }
+        System.out.println();
+        System.out.println("output array: ");
+        for(j=0;j<input.length;j++){
+            System.out.print(output[j]+",");
+
+        }
+    }
+}
+
+
+
